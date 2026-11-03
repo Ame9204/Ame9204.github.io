@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wan Ameer | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stars.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars-bg" aria-hidden="true">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+
+  <header>
+    <nav>
+      <a href="#" class="logo">Wan Ameer</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="about-intro">
+        <figure class="hero-photo">
+          <img src="images/me.jpg" alt="Photo of Wan Ameer">
+        </figure>
+        <div class="about-text">
+          <h1>Hi, I'm Wan Ameer</h1>
+          <p>
+            I'm a final-year Bachelor of Information Systems (Hons.) Intelligent System Engineering
+            student who enjoys building AI that solves real problems, from an accessibility app
+            powered by Gemini to an IoT system that rates sleep quality.
+          </p>
+          <p>
+            I'm looking for an <strong>AI internship starting March 2027</strong>, where I can
+            contribute to real projects and keep learning from an experienced team.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="learning-title">Current Skills</h3>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <p class="skill-label">AI &amp; Machine Learning</p>
+          <ul class="skills">
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Supervised Classification</li>
+            <li>Random Forest / K-NN</li>
+            <li>LLM APIs (Gemini)</li>
+            <li>Local LLMs (Ollama)</li>
+            <li>Vector Databases (Qdrant)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Web &amp; Design</p>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>FastAPI</li>
+            <li>UI Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Hardware &amp; Tools</p>
+          <ul class="skills">
+            <li>ESP32 / IoT Sensors</li>
+            <li>Git</li>
+            <li>Mailchimp</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="learning-title">Currently learning...</h3>
+      <ul class="learning">
+        <li>
+          <strong>Deep Learning (PyTorch)</strong>
+          <span>Building small neural networks from scratch</span>
+        </li>
+        <li>
+          <strong>RAG Pipelines</strong>
+          <span>Connecting LLMs to my own documents</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="journey">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <article class="job edu">
+          <div class="job-header">
+            <h3>Bachelor of Information Systems (Hons.) Intelligent System Engineering</h3>
+            <span class="job-date">Mar 2025 &ndash; Present</span>
+            <p class="job-company">UiTM Merbok, Kedah</p>
+          </div>
+          <span class="tag">Education</span>
+          <p class="job-note">Current CGPA: 3.67</p>
+        </article>
+        <article class="job work">
+          <div class="job-header">
+            <h3>IT Intern</h3>
+            <span class="job-date">Sep 2024 &ndash; Feb 2025</span>
+          </div>
+          <span class="tag">Work</span>
+          <p class="job-company">Prosains Sdn Bhd</p>
+          <ul>
+            <li>Built and updated the company's front-end website using HTML and CSS.</li>
+            <li>Helped set up the company's Mailchimp email newsletter.</li>
+            <li>Handled day-to-day IT tasks.</li>
+          </ul>
+        </article>
+        <article class="job edu">
+          <div class="job-header">
+            <h3>Diploma of Computer Science</h3>
+            <span class="job-date">Oct 2022 &ndash; Feb 2025</span>
+          </div>
+          <span class="tag">Education</span>
+          <p class="job-company">UiTM Arau, Perlis</p>
+          <p class="job-note">CGPA: 3.69 (Vice-Chancellor's Award)</p>
+        </article>
+        <article class="job edu">
+          <div class="job-header">
+            <h3>Secondary School</h3>
+            <span class="job-date">2017 &ndash; 2021</span>
+          </div>
+          <span class="tag">Education</span>
+          <p class="job-company">SMK Gombak Setia</p>
+          <p class="job-note">SPM: 5A 2B 1C 1D</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project" id="beeable">
+          <h3>BeeAble</h3>
+          <p class="project-meta">Sime Darby Hackathon &middot; Team of 3 &middot; Completed</p>
+          <p>
+            A mobile app that helps pedestrians navigate their township and report accessibility
+            problems. AI sorts reports by type, and an admin page helps staff handle them faster.
+          </p>
+          <p><strong>My role:</strong></p>
+          <ul class="role">
+            <li>Designed the app's look and theme.</li>
+            <li>Built the navigation feature that guides pedestrians around their township.</li>
+            <li>Integrated the Gemini API into the reporting page so uploaded photos are
+              automatically categorised by the type of problem.</li>
+          </ul>
+          <ul class="tech">
+            <li>Gemini API</li>
+            <li>AI Image Classification</li>
+            <li>UI Design</li>
+            <li>Mobile App</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Intelligent Sleep Quality Monitoring</h3>
+          <p class="project-meta">Final Year Project &middot; In progress</p>
+          <p>
+            An IoT and machine learning system that classifies university students' sleep quality
+            (Good / Moderate / Poor) from sensor data, with feedback on a real-time web dashboard.
+            Passed the project viva with no corrections.
+          </p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>Random Forest / K-NN</li>
+            <li>ESP32</li>
+            <li>MAX30102</li>
+            <li>DHT</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Local-First AI Assistant</h3>
+          <p class="project-meta">Personal Project &middot; In progress</p>
+          <p>
+            A personal AI assistant and companion that runs fully offline on Windows. It can use tools
+            (files, web search, media) and has long-term memory, so it remembers facts and past
+            conversations over time.
+          </p>
+          <ul class="tech">
+            <li>Python</li>
+            <li>Ollama</li>
+            <li>Mem0</li>
+            <li>Qdrant</li>
+            <li>FastAPI</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities">
+      <h2>Activities &amp; Achievements</h2>
+      <div class="activity-list">
+        <div class="activity-row">
+        <article class="project activity">
+          <span class="tag">Hackathon</span>
+          <h3>Sime Darby Hackathon</h3>
+          <p class="project-meta">Sep &ndash; Oct 2026 &middot; Team of 3</p>
+          <p>
+            Competed in a team of three to design and build an accessibility app for pedestrians
+            over six weeks.
+          </p>
+          <p>
+            We built <strong>BeeAble</strong>, where I handled the app design, navigation and Gemini AI integration.
+            <a href="#beeable">See it in Projects &rarr;</a>
+          </p>
+        </article>
+        <a class="cert-frame" href="certificates/sime-darby-hackathon.jpg" target="_blank">
+          <img src="certificates/sime-darby-hackathon.jpg" alt="Sime Darby Hackathon certificate">
+        </a>
+        </div>
+
+        <div class="activity-row">
+        <article class="project activity">
+          <span class="tag">Community</span>
+          <h3>SULAM 2.0: Kedah Digital Festival</h3>
+          <p class="project-meta">Jul &ndash; Sep 2026 &middot; Festival on 30 Sep 2026 &middot; Team of 2</p>
+          <p>
+            Ran an AI Game Booth with a partner at the Kedah Digital Festival, teaching children
+            about AI through play.
+          </p>
+          <p>
+            <strong>My role:</strong> built <strong>Build-A-Slime</strong>, a simple web game that
+            shows children how AI optimises step by step to reach the best answer.
+          </p>
+          <ul class="tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>AI Education</li>
+          </ul>
+        </article>
+        <a class="cert-frame" href="certificates/sulam-2.jpg" target="_blank">
+          <img src="certificates/sulam-2.jpg" alt="SULAM 2.0 certificate">
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out.</p>
+      <a href="mailto:ameer922004@gmail.com" class="btn">Say Hello</a>
+      <p class="email">ameer922004@gmail.com</p>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wan Ameer. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
